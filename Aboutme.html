@@ -13,7 +13,9 @@
 
   <title>About Me</title>  
 
-<link href="style.css" rel="stylesheet"></head>
+<link href="style.css" rel="stylesheet">
+
+</head>
 
 <body class="">
 <h1>Matari Howard</h1>
@@ -58,7 +60,7 @@
         </ul>
 
 
-        <img src="pic3.svg.jpg" alt="Girl in a vr headset"width="500" height="600">
+        <img src="pic3.svg.jpg" class="expanded" alt="Girl in a vr headset"width="500" height="600">
   
         <ol>
             <li>Writer</li>
@@ -85,7 +87,16 @@ function myFunction() {
 </script>
 
 
+<p id="image">Click me.</p>
 
+<script>
+document.getElementById("image").addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("image").innerHTML = "YOU CLICKED ME!";
+}
+</script>
+<script src="Aboutme.js"></script>
 </body>
 
 </html>
